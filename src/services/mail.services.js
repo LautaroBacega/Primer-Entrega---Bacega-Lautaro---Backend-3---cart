@@ -49,8 +49,6 @@ class MailService {
       subject,
       html: message,
     });
-
-    // console.log(info);
   }
 }
 

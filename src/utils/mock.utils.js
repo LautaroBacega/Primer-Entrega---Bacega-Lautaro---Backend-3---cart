@@ -1,5 +1,5 @@
 import { faker } from "@faker-js/faker";
-import { CartModel } from "../daos/mongodb/models/cart.model.js"; // Asegúrate de que esto esté presente
+import { CartModel } from "../daos/mongodb/models/cart.model.js";
 
 faker.locale = "es";
 
@@ -25,8 +25,8 @@ export const generateMockCart = (quantity) => {
         const cart = {
             products: [
                 {
-                    quantity: faker.number.int({ min: 1, max: 10 }), // Cantidad aleatoria
-                    product: faker.database.mongodbObjectId() // Genera un ID de MongoDB
+                    quantity: faker.number.int({ min: 1, max: 10 }),
+                    product: faker.database.mongodbObjectId()
                 }
             ]
         };

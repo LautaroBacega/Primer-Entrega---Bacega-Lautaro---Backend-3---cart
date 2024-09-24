@@ -115,8 +115,8 @@ export const clearCart = async (req, res, next) => {
 
 export const finalizarCompra = async (req, res) => {
     try {
-        const user = req.user; // Asumiendo que el usuario autenticado se encuentra en req.user
-        const result = await cartService.finalizarCompra(req.params.id, user); // Usando cartService
+        const user = req.user;
+        const result = await cartService.finalizarCompra(req.params.id, user);
         res.status(200).json(result);
     } catch (error) {
         console.error("Error al finalizar la compra:", error);

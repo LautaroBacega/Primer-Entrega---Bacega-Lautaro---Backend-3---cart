@@ -8,7 +8,7 @@ export const createUsersMock = async (cant = 20) => {
       const user = generateUser()
       usersArray.push(user);
     }
-    return await userModel.insertMany(usersArray); //createUsers(usersArray);
+    return await userModel.insertMany(usersArray);
   } catch (error) {
     throw new Error(error);
   }
